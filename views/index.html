@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pdf+ : A Tool to Merge 2 Pdfs </title>
+    <link rel="stylesheet" href="/css/main.css">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <h1>PDF+</h1>
+            <div class="nav-right">
+                <h2>A TOOL TO MERGE YOUR PDFS </h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="merger">
+                <h3>SELECT TWO PDFS YOU WANT TO MERGE</h3>
+                <br>
+                <form method="post" action="/merge" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1"></label>
+                        <input type="file" name="pdfs" class="form-control-file" multiple accept=".pdf">
+                        <br>
+                        <input class="btn btn-primary my-4" type="submit" value="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
