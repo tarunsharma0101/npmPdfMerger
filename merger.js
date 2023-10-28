@@ -1,8 +1,9 @@
 const PDFMerger = require('pdf-merger-js');
 
-var merger = new PDFMerger();
+ var merger = new PDFMerger();
 
  const mergePdfs = async (p1,p2) => {
+ const merger = new PDFMerger();
 
   await merger.add(p1); 
   await merger.add(p2);
